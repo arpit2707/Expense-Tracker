@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<!-- <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/> -->
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <title>Expense Tracker</title>
+
+</head>
+<body>
+    <div>
+    <label for="exp_amt">Choose expense amount</label>  <input type="number" name="exp_amt" id="exp_amt">
+    <label for="reason" >Description</label> 
+    <select name="exp_reas" id="reas" class="browser-default custom-select">
+        <option selected>Select reason for expense</option>
+        <option value="1" >Veg</option>
+        <option value="2">Fruits</option>
+        <option value="3">Juice</option>
+        <option value="4">Mummy Medicine</option>
+        <option value="5">Home Grocery</option>
+    </select>
+    <label for="categ">Category</label> 
+    <select name="exp_categ" id="categ" class="browser-default custom-select">
+        <option selected>Select Category</option>
+        <option value="1" >Food</option>
+        <option value="2">Travel</option>
+        <option value="3">Recharge</option>
+        <option value="4">Medicine</option>
+        <option value="5">Miscellaneous</option>
+    </select>
+    <button class="btn" type="click" value="Submit">Add Expense</button>
+    <div class="container" id="listOfExpense">
+    <ul>
+        
+    </ul>
+    </div>
+    </div>
+<script src="expense.js"></script>
+</body>
+
+</html>
